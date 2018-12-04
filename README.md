@@ -79,20 +79,56 @@ Download the poster for further details. This project contains 2 implementations
 
 ![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/3.D_brightness.bmp)
 
+4. **Color Inversion(0011)**:
 
-4. Color Inversion  		0011
-5. Red Filter		 		0100
-6. Blue Filter 			0101
-7. Green Filter 			0110
-8. Original Image			0111
-9. Average Blurring		1000
-10. Sobel Edge Detection	1001
-11. Edge Detection			1010
-12. Motion Blurring	xy		1011
-13. Emboss					1100
-14. Sharpen					1101
-15. Motion Blur x			1110
-16. Gaussian Blur			1111
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/4.Invert.bmp)
 
+5. **Red Filter(0100)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/5.Red_filter.bmp)
+
+6. **Blue Filter(0101)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/6.Green_filter.bmp)
+
+7. **Green Filter(0110)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/7.Blue_filter.bmp)
+
+8. **Original Image(0111)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/8.Original.bmp)
+
+9. **Average Blurring(1000)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
+
+10. **Sobel Edge Detection(1001)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sobel_edge.bmp)
+
+11. **Edge Detection(1010)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/outline.bmp)
+
+12. **Motion Blurring	xy(1011)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp)
+
+13. **Emboss(1100)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/embos.bmp)
+
+14. **Sharpen(1101)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sharpen.bmp)
+
+15. **Motion Blur in x direction(1110):
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp)
+
+16. **Gaussian Blur(1111)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
 
 ####################    Please feel free to ask any question, issues or doubts       ##############################
