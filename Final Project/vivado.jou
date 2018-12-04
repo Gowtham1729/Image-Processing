@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov 10 21:00:07 2018
+# Process ID: 26720
+# Current directory: C:/Users/HomePC/Desktop/test_2 _initial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22940 C:\Users\HomePC\Desktop\test_2 _initial\test_2.xpr
+# Log file: C:/Users/HomePC/Desktop/test_2 _initial/vivado.log
+# Journal file: C:/Users/HomePC/Desktop/test_2 _initial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/HomePC/Desktop/test_2 _initial/test_2.xpr}
+update_compile_order -fileset sources_1
