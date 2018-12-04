@@ -63,7 +63,7 @@ Download the poster for further details. This project contains 2 implementations
 1. Verilog implementation which can read, process and write images from your system.(BIPT and Blurring Folder)
 2. FPGA implementation which can show the output of the image loaded in block ram on a monitor.(Final Project Folder)
 
-//
+//sel_module is used for selecting the function and val to adjust brightness, filters etc.,
 # Module Selection Bits
 
 1. **RGB2Gray(0000)**: 
@@ -131,5 +131,5 @@ Download the poster for further details. This project contains 2 implementations
 
 ![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
 
-####################    Please feel free to ask any question, issues or doubts in issuesor contact me  ##############################
-contact: chitipolu.gowtham@iitgn.ac.in
+####################    Please feel free to ask any question, issues or doubts in issues or contact me  ##############################
+contact: chitipolu.gowtham@iitgn.ac.in   #############################################################
