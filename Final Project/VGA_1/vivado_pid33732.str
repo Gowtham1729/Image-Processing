@@ -1,0 +1,1485 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 33732
+License: Customer
+
+Current time: 	Tue Nov 20 19:33:01 IST 2018
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 123 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Gowtham
+User home directory: C:/Users/Gowtham
+User working directory: C:/Users/Gowtham/Desktop/Final Project/VGA_1
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Gowtham/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Gowtham/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Gowtham/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Gowtham/Desktop/Final Project/VGA_1/vivado.log
+Vivado journal file location: 	C:/Users/Gowtham/Desktop/Final Project/VGA_1/vivado.jou
+Engine tmp dir: 	C:/Users/Gowtham/Desktop/Final Project/VGA_1/.Xil/Vivado-33732-Gowtham
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	200 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 503 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 67 MB (+68184kb) [00:00:17]
+// [Engine Memory]: 492 MB (+364157kb) [00:00:17]
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Gowtham\Desktop\Final Project\VGA_1\VGA_1.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 503 MB. GUI used memory: 34 MB. Current time: 11/20/18 7:33:03 PM IST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 544 MB (+29418kb) [00:00:28]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 614 MB (+44024kb) [00:00:38]
+// Tcl Message: open_project {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 661 MB. GUI used memory: 39 MB. Current time: 11/20/18 7:33:28 PM IST
+// Project name: VGA_1; location: C:/Users/Gowtham/Desktop/Final Project/VGA_1; part: xc7a35tcpg236-1
+// [Engine Memory]: 661 MB (+17272kb) [00:00:46]
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 876.961 ; gain = 141.398 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAResourceOtoP.PAViews_PROJECT_SUMMARY: Project Summary: close view
+// Elapsed time: 45 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // J
+// Elapsed time: 73 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v)]", 1); // B (D, ck)
+// PAPropertyPanels.initPanels (imagex.coe) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, imagex.coe]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (ck):  Re-customize IP : addNotify
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 682 MB. GUI used memory: 41 MB. Current time: 11/20/18 7:35:39 PM IST
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// [Engine Memory]: 768 MB (+77885kb) [00:02:59]
+// [Engine Memory]: 842 MB (+37220kb) [00:03:03]
+// r (ck): Re-customize IP: addNotify
+// [Engine Memory]: 894 MB (+10763kb) [00:03:06]
+// Elapsed time: 10 seconds
+dismissDialog("Re-customize IP"); // O (ck)
+// [GUI Memory]: 73 MB (+2443kb) [00:03:08]
+// [GUI Memory]: 78 MB (+818kb) [00:03:18]
+// Elapsed time: 14 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "96"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "90"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 915 MB. GUI used memory: 46 MB. Current time: 11/20/18 7:36:19 PM IST
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "80"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "72"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (C, r)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 83 MB (+1397kb) [00:04:31]
+// Elapsed time: 40 seconds
+setFileChooser("C:/Users/Gowtham/Desktop/Final Project/VGA_1/imagex.coe");
+// HMemoryUtils.trashcanNow. Engine heap size: 938 MB. GUI used memory: 49 MB. Current time: 11/20/18 7:37:24 PM IST
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "96"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "90"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+// Elapsed time: 11 seconds
+setText("Defines the PortA Write Width(DINA)", "92"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+// [Engine Memory]: 940 MB (+446kb) [00:05:24]
+setText("Defines the PortA Write Width(DINA)", "95"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "96"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+// [GUI Memory]: 87 MB (+340kb) [00:06:45]
+// [GUI Memory]: 92 MB (+557kb) [00:17:11]
+// Elapsed time: 870 seconds
+setText("Write Depth", "18400"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+// Elapsed time: 14 seconds
+dismissDialog("Re-customize IP"); // r (ck)
+// [GUI Memory]: 98 MB (+1507kb) [00:26:09]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5749 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5830 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 946 MB. GUI used memory: 50 MB. Current time: 11/20/18 8:07:25 PM IST
+// Elapsed time: 1850 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (ck): Re-customize IP: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 27 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "96"); // z (aZ, r)
+// [GUI Memory]: 105 MB (+1363kb) [00:52:18]
+// Elapsed time: 32 seconds
+setText("Write Depth", "18400"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (C, r)
+// Elapsed time: 10 seconds
+setFileChooser("C:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe");
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // aY (C, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_OUT_OF_CONTEXT_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run image_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (ck): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "96"); // z (aZ, r)
+setText("Write Depth", "18400"); // z (aZ, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (C, r)
+setFileChooser("C:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe");
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // aY (C, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+// Tcl Message: set_property -dict [list CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18400} CONFIG.Read_Width_A {96} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Coe_File {C:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe}] [get_ips image] 
+// r (ck): Re-customize IP: addNotify
+// bx (r):  Re-customize IP : addNotify
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// [GUI Memory]: 113 MB (+3558kb) [00:53:27]
+// aI (ck): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bx (r)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'image'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'image'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'image'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'image'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'image'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1160.949 ; gain = 0.000 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all image] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -no_script -sync -force -quiet 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, image.coe]", 4, false); // B (D, ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs -jobs 4 image_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 20 20:26:51 2018] Launched image_synth_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/image_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, image.coe]", 4, false); // B (D, ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, image.coe]", 4, false); // B (D, ck)
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, imagex.coe]", 5, false); // B (D, ck)
+dismissDialog("Managing Output Products"); // bx (ck)
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, image.coe]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, imagex.coe]", 5, false); // B (D, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/imagex.coe}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/imagex.coe}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, image.coe]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, image.coe]", 4, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/image.coe}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/image.coe}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, imagex.coe]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, imagex.coe]", 4, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// [GUI Memory]: 122 MB (+3267kb) [00:54:46]
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{c:/Users/Gowtham/Desktop/Final Project/VGA_1/imagex.coe}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// aE (ck): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: remove_files  {{c:/Users/Gowtham/Desktop/Final Project/VGA_1/imagex.coe}} 
+dismissDialog("Remove Sources"); // bx (aE)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 130 MB (+1501kb) [00:56:56]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 448ms to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 136 MB (+441kb) [01:00:26]
+// WARNING: HTimer (StateMonitor Timer) is taking 674ms to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 145 MB (+1417kb) [01:01:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 946 MB. GUI used memory: 62 MB. Current time: 11/20/18 8:37:31 PM IST
+// Elapsed time: 2364 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (ck):  Re-customize IP : addNotify
+// r (ck): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (ck)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+dismissDialog("Re-customize IP"); // r (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 946 MB. GUI used memory: 65 MB. Current time: 11/20/18 9:07:31 PM IST
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 36194ms to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 38526 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 35848 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 36032 ms. Increasing delay to 4000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1364ms to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3018 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3372 ms. Increasing delay to 5000 ms.
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 1544 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (ck): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (C, r)
+setFileChooser("C:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+// Tcl Message: set_property -dict [list CONFIG.Coe_File {C:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe}] [get_ips image] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe' 
+// r (ck): Re-customize IP: addNotify
+// bx (r):  Re-customize IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// aI (ck): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bx (r)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'image'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'image'... 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'image'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'image'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'image'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1185.355 ; gain = 0.000 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all image] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run image_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs -jobs 4 image_synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 20 21:33:47 2018] Launched image_synth_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/image_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2758 ms to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 2864ms to process. Increasing delay to 8000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 671ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4783 ms. Increasing delay to 5000 ms.
+// Elapsed time: 64 seconds
+dismissDialog("Managing Output Products"); // bx (ck)
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (A, G)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 878ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 946 MB. GUI used memory: 70 MB. Current time: 11/20/18 9:37:31 PM IST
+// Elapsed time: 173 seconds
+selectCodeEditor("VGA.v", 330, 261, false, true, false, false, false); // ce (w, ck) - Control Key
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aI, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tblue"); // l (aQ, ck)
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 41 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("VGA.v", 64, 218, false, true, false, false, false); // ce (w, ck) - Control Key
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("VGA.v", 78, 216); // ce (w, ck)
+selectCodeEditor("VGA.v", 246, 327); // ce (w, ck)
+selectComboBox("FindAndReplaceDialog.ck_Find what:", "3'b", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.ck_Replace with:", "4'b1", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+// Elapsed time: 15 seconds
+selectCodeEditor("VGA.v", 354, 328); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 99 seconds
+selectCodeEditor("VGA.v", 164, 113); // ce (w, ck)
+selectCodeEditor("VGA.v", 124, 246); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("VGA.v", 269, 317); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+selectCodeEditor("VGA.v", 129, 265); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 45 seconds
+selectCodeEditor("VGA.v", 164, 368); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("VGA.v", 1, 249); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+selectCodeEditor("VGA.v", 1, 265); // ce (w, ck)
+// Elapsed time: 50 seconds
+selectCodeEditor("VGA.v", 209, 284); // ce (w, ck)
+// Elapsed time: 10 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("VGA.v", 652, 281); // ce (w, ck)
+// Elapsed time: 36 seconds
+selectCodeEditor("VGA.v", 663, 435); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+selectCodeEditor("VGA.v", 732, 262); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("VGA.v", 712, 421); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+selectCodeEditor("VGA.v", 739, 244); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+// Elapsed time: 101 seconds
+selectCodeEditor("VGA.v", 457, 141); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+selectCodeEditor("VGA.v", 104, 330); // ce (w, ck)
+selectCodeEditor("VGA.v", 180, 316); // ce (w, ck)
+selectCodeEditor("VGA.v", 182, 375); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 230 seconds
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("VGA.v", 106, 314); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("VGA.v", 143, 296); // ce (w, ck)
+selectCodeEditor("VGA.v", 142, 299); // ce (w, ck)
+selectCodeEditor("VGA.v", 102, 318); // ce (w, ck)
+selectCodeEditor("VGA.v", 197, 332); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.ck_Replace with:", "4'b0", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 27 seconds
+selectCodeEditor("VGA.v", 479, 90); // ce (w, ck)
+// Elapsed time: 14 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constr.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constr.xdc]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("constr.xdc", 5, 313); // ce (w, ck)
+selectCodeEditor("constr.xdc", 289, 317); // ce (w, ck)
+selectCodeEditor("constr.xdc", 289, 317, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("constr.xdc", 435, 364); // ce (w, ck)
+// Elapsed time: 49 seconds
+selectCodeEditor("constr.xdc", 5, 248); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("constr.xdc", 375, 58); // ce (w, ck)
+selectCodeEditor("constr.xdc", 282, 59); // ce (w, ck)
+selectCodeEditor("constr.xdc", 410, 79); // ce (w, ck)
+selectCodeEditor("constr.xdc", 369, 108); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("constr.xdc", 8, 278); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+selectCodeEditor("constr.xdc", 290, 352); // ce (w, ck)
+selectCodeEditor("constr.xdc", 290, 352, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 27 seconds
+typeControlKey((HResource) null, "constr.xdc", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("constr.xdc", 281, 181); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+// Elapsed time: 76 seconds
+selectCodeEditor("VGA.v", 169, 304); // ce (w, ck)
+selectCodeEditor("VGA.v", 262, 350); // ce (w, ck)
+// Elapsed time: 41 seconds
+selectCodeEditor("VGA.v", 223, 287); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("VGA.v", 166, 176); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+selectCodeEditor("VGA.v", 247, 281); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+selectCodeEditor("VGA.v", 167, 161); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+selectCodeEditor("VGA.v", 178, 211); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+selectCodeEditor("VGA.v", 391, 286); // ce (w, ck)
+selectCodeEditor("VGA.v", 297, 275); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+selectCodeEditor("VGA.v", 303, 366); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 51 seconds
+selectCodeEditor("VGA.v", 192, 263); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+selectCodeEditor("VGA.v", 202, 274); // ce (w, ck)
+selectCodeEditor("VGA.v", 197, 268); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("VGA.v", 287, 243); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("VGA.v", 197, 212); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+selectCodeEditor("VGA.v", 246, 265); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+selectCodeEditor("VGA.v", 363, 351); // ce (w, ck)
+selectCodeEditor("VGA.v", 243, 262); // ce (w, ck)
+selectCodeEditor("VGA.v", 237, 265); // ce (w, ck)
+selectCodeEditor("VGA.v", 301, 320); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("VGA.v", 196, 299); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("VGA.v", 257, 210); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+selectCodeEditor("VGA.v", 366, 297); // ce (w, ck)
+selectCodeEditor("VGA.v", 247, 208); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 152 MB (+400kb) [02:32:31]
+// Elapsed time: 131 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+selectCodeEditor("constr.xdc", 355, 337); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 946 MB. GUI used memory: 72 MB. Current time: 11/20/18 10:07:35 PM IST
+// Elapsed time: 96 seconds
+selectCodeEditor("constr.xdc", 8, 317); // ce (w, ck)
+// Elapsed time: 41 seconds
+selectCodeEditor("constr.xdc", 8, 317); // ce (w, ck)
+selectCodeEditor("constr.xdc", 376, 315); // ce (w, ck)
+// Elapsed time: 34 seconds
+selectCodeEditor("constr.xdc", 3, 346); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// Elapsed time: 18 seconds
+selectCodeEditor("constr.xdc", 287, 326); // ce (w, ck)
+selectCodeEditor("constr.xdc", 297, 326); // ce (w, ck)
+selectCodeEditor("constr.xdc", 284, 329); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("constr.xdc", 314, 349); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("constr.xdc", 287, 363); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("constr.xdc", 314, 383); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("constr.xdc", 280, 397); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("constr.xdc", 307, 420); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("constr.xdc", 284, 433); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("constr.xdc", 317, 451); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("constr.xdc", 370, 333); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("constr.xdc", 5, 284); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("constr.xdc", 213, 208); // ce (w, ck)
+selectCodeEditor("constr.xdc", 327, 111); // ce (w, ck)
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "constr.xdc", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "constr.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("constr.xdc", 317, 279); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("constr.xdc", 420, 305); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+selectCodeEditor("VGA.v", 242, 232); // ce (w, ck)
+// Elapsed time: 105 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("VGA.v", 146, 261); // ce (w, ck)
+selectCodeEditor("VGA.v", 79, 261); // ce (w, ck)
+selectCodeEditor("VGA.v", 33, 266); // ce (w, ck)
+selectCodeEditor("VGA.v", 46, 298); // ce (w, ck)
+// Elapsed time: 130 seconds
+selectCodeEditor("VGA.v", 585, 398); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectComboBox("FindAndReplaceDialog.ck_Find what:", "red_x", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.ck_Replace with:", "r", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+// Elapsed time: 19 seconds
+selectCodeEditor("VGA.v", 169, 407); // ce (w, ck)
+// Elapsed time: 74 seconds
+selectComboBox("FindAndReplaceDialog.ck_Find what:", "blue_x", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.ck_Replace with:", "b", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+// Elapsed time: 27 seconds
+selectComboBox("FindAndReplaceDialog.ck_Find what:", "green_x", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.ck_Replace with:", "g", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+// Elapsed time: 18 seconds
+selectCodeEditor("VGA.v", 178, 409); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("VGA.v", 595, 198); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "red_x"); // l (aQ, ck)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aI, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("VGA.v", 217, 172); // ce (w, ck)
+selectCodeEditor("VGA.v", 663, 216); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("VGA.v", 69, 280); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// Elapsed time: 16 seconds
+selectCodeEditor("VGA.v", 1, 144); // ce (w, ck)
+selectCodeEditor("VGA.v", 345, 320); // ce (w, ck)
+selectCodeEditor("VGA.v", 436, 168); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 37 seconds
+selectCodeEditor("VGA.v", 1, 196); // ce (w, ck)
+selectCodeEditor("VGA.v", 1, 266); // ce (w, ck)
+// Elapsed time: 48 seconds
+selectCodeEditor("VGA.v", 117, 200); // ce (w, ck)
+selectCodeEditor("VGA.v", 280, 448); // ce (w, ck)
+selectCodeEditor("VGA.v", 187, 300); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("VGA.v", 304, 296); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+selectCodeEditor("VGA.v", 164, 281); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("VGA.v", 450, 39); // ce (w, ck)
+selectCodeEditor("VGA.v", 296, 110); // ce (w, ck)
+selectCodeEditor("VGA.v", 252, 389); // ce (w, ck)
+selectCodeEditor("VGA.v", 297, 301); // ce (w, ck)
+selectCodeEditor("VGA.v", 189, 159); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("VGA.v", 296, 296); // ce (w, ck)
+selectCodeEditor("VGA.v", 202, 346); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("VGA.v", 206, 267); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("VGA.v", 189, 335); // ce (w, ck)
+selectCodeEditor("VGA.v", 295, 142); // ce (w, ck)
+selectCodeEditor("VGA.v", 311, 296); // ce (w, ck)
+selectCodeEditor("VGA.v", 197, 301); // ce (w, ck)
+selectCodeEditor("VGA.v", 283, 269); // ce (w, ck)
+selectCodeEditor("VGA.v", 235, 241); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("VGA.v", 299, 180); // ce (w, ck)
+selectCodeEditor("VGA.v", 193, 224); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("VGA.v", 239, 121); // ce (w, ck)
+selectCodeEditor("VGA.v", 235, 114); // ce (w, ck)
+selectCodeEditor("VGA.v", 266, 199); // ce (w, ck)
+selectCodeEditor("VGA.v", 222, 151); // ce (w, ck)
+selectCodeEditor("VGA.v", 318, 248); // ce (w, ck)
+selectCodeEditor("VGA.v", 1, 57); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 946 MB. GUI used memory: 74 MB. Current time: 11/20/18 10:37:36 PM IST
+// Elapsed time: 647 seconds
+selectCodeEditor("VGA.v", 796, 280); // ce (w, ck)
+selectCodeEditor("VGA.v", 796, 279); // ce (w, ck)
+// Elapsed time: 265 seconds
+selectCodeEditor("VGA.v", 256, 368); // ce (w, ck)
+selectCodeEditor("VGA.v", 247, 368); // ce (w, ck)
+selectCodeEditor("VGA.v", 336, 320); // ce (w, ck)
+selectCodeEditor("VGA.v", 339, 372); // ce (w, ck)
+selectCodeEditor("VGA.v", 859, 248); // ce (w, ck)
+selectCodeEditor("VGA.v", 252, 388); // ce (w, ck)
+selectCodeEditor("VGA.v", 229, 365); // ce (w, ck)
+selectCodeEditor("VGA.v", 964, 386); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("VGA.v", 191, 208); // ce (w, ck)
+selectCodeEditor("VGA.v", 939, 311); // ce (w, ck)
+selectCodeEditor("VGA.v", 2, 368); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 120 seconds
+selectCodeEditor("VGA.v", 113, 182); // ce (w, ck)
+// Elapsed time: 48 seconds
+selectCodeEditor("VGA.v", 158, 248); // ce (w, ck)
+// Elapsed time: 33 seconds
+selectCodeEditor("VGA.v", 155, 375); // ce (w, ck)
+selectCodeEditor("VGA.v", 143, 369); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("VGA.v", 143, 315); // ce (w, ck)
+// Elapsed time: 54 seconds
+selectCodeEditor("VGA.v", 140, 198); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("VGA.v", 132, 161); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("VGA.v", 253, 142); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Run Synthesis"); // A (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "4", 3); // e (aU, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 10 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 20 22:51:32 2018] Launched synth_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log [Tue Nov 20 22:51:32 2018] Launched impl_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 254ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 456ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 315 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// 'Q' command handler elapsed time: 9 seconds
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Elapsed time: 10 seconds
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1190.836 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A791A 
+// [Engine Memory]: 1,181 MB (+203943kb) [03:24:44]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,184 MB. GUI used memory: 78 MB. Current time: 11/20/18 10:57:27 PM IST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1853.246 ; gain = 662.410 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Elapsed time: 15 seconds
+dismissDialog("Auto Connect"); // bx (ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // aa (ck)
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "C:/Users/Gowtham/Desktop/test_2 _initial_vga_1/test_2 _initial_vga_1/VGA_1/VGA_1.xpr"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Opening Vivado Project: C:/Users/Gowtham/Desktop/test_2 _initial_vga_1/test_2 _initial_vga_1/VGA_1/VGA_1.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (A, G)
+// Tcl Message: open_project {C:/Users/Gowtham/Desktop/test_2 _initial_vga_1/test_2 _initial_vga_1/VGA_1/VGA_1.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,229 MB. GUI used memory: 79 MB. Current time: 11/20/18 10:59:36 PM IST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,247 MB (+7129kb) [03:27:00]
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// Project name: VGA_1(2); location: C:/Users/Gowtham/Desktop/test_2 _initial_vga_1/test_2 _initial_vga_1/VGA_1; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1895.777 ; gain = 32.926 
+// Elapsed time: 18 seconds
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A791A 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,275 MB. GUI used memory: 89 MB. Current time: 11/20/18 11:01:11 PM IST
+// Elapsed time: 94 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v)]", 1); // B (D, ck)
+closeMainWindow("VGA_1(2) - [C:/Users/Gowtham/Desktop/test_2 _initial_vga_1/test_2 _initial_vga_1/VGA_1/VGA_1.xpr] - Vivado 2018.2"); // ck
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (ck): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Close Project : addNotify
+dismissDialog("Close Project"); // A (ck)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,278 MB. GUI used memory: 85 MB. Current time: 11/20/18 11:01:29 PM IST
+// 'b' command handler elapsed time: 3 seconds
+// Tcl Message: close_project 
+dismissDialog("Close Hardware Target"); // n (ck)
+dismissDialog("Close Project"); // bx (ck)
+// Elapsed time: 13 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+// Elapsed time: 215 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("constr.xdc", 1, 211); // ce (w, ck)
+selectCodeEditor("constr.xdc", 443, 206); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+// Elapsed time: 34 seconds
+selectCodeEditor("VGA.v", 268, 164); // ce (w, ck)
+// Elapsed time: 54 seconds
+selectCodeEditor("VGA.v", 118, 327); // ce (w, ck)
+selectCodeEditor("VGA.v", 555, 270); // ce (w, ck)
+// Elapsed time: 539 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+// Elapsed time: 61 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_COMPILATION, "Log"); // aw
+// Elapsed time: 70 seconds
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+// Elapsed time: 202 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+// Elapsed time: 30 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectCodeEditor("VGA.v", 317, 157); // ce (w, ck)
+selectCodeEditor("VGA.v", 455, 217); // ce (w, ck)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, img.coe]", 3, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (ck):  Re-customize IP : addNotify
+// r (ck): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (ck)
+// Elapsed time: 53 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // aY (C, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+// aI (ck): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OF_OUTPUT_PRODUCTS_DID_NOT_OK", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_syncIndex (VGA.v), inst1 : image (image.xci)]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (ck): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// 'bn' command handler elapsed time: 4 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OF_OUTPUT_PRODUCTS_DID_NOT_OK", "OK"); // JButton (A, G)
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, img.coe]", 4, false); // B (D, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 20 23:25:43 2018] Launched synth_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log [Tue Nov 20 23:25:43 2018] Launched impl_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("VGA.v", 651, 106); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 219 seconds
+selectCodeEditor("VGA.v", 197, 183); // ce (w, ck)
+selectCodeEditor("VGA.v", 197, 183, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+// aI (ck): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+dismissDialog("Feedback Request"); // aI (ck)
+selectButton("PAResourceTtoZ.TouchpointSurveyDialog_USE_TOOLS_OPTIONS_WINDOWS_BEHAVIOR_OK", "OK"); // JButton (A, G)
+// Elapsed time: 37 seconds
+selectCodeEditor("VGA.v", 48, 201); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,285 MB. GUI used memory: 84 MB. Current time: 11/20/18 11:31:32 PM IST
+// Elapsed time: 218 seconds
+selectCodeEditor("VGA.v", 254, 214); // ce (w, ck)
+selectCodeEditor("VGA.v", 254, 214, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("VGA.v", 256, 211); // ce (w, ck)
+selectCodeEditor("VGA.v", 256, 211, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("VGA.v", 337, 218); // ce (w, ck)
+selectCodeEditor("VGA.v", 337, 218, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("VGA.v", 432, 212); // ce (w, ck)
+selectCodeEditor("VGA.v", 432, 212, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("VGA.v", 514, 219); // ce (w, ck)
+selectCodeEditor("VGA.v", 514, 219, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 73 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 20 23:36:36 2018] Launched synth_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log [Tue Nov 20 23:36:36 2018] Launched impl_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 284 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1926.105 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A791A 
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bx (ck)
+// Elapsed time: 13 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A791A 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 12 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constr.xdc", 1); // k (j, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 88 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.v", 0); // k (j, ck)
+// Elapsed time: 116 seconds
+selectCodeEditor("VGA.v", 98, 251); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("VGA.v", 65, 254); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("VGA.v", 97, 250); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("VGA.v", 173, 299); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("VGA.v", 96, 208); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("VGA.v", 195, 118); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("VGA.v", 180, 332); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'c'); // ce (w, ck)
+selectCodeEditor("VGA.v", 118, 184); // ce (w, ck)
+typeControlKey((HResource) null, "VGA.v", 'v'); // ce (w, ck)
+selectCodeEditor("VGA.v", 496, 337); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 20 23:48:22 2018] Launched synth_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log [Tue Nov 20 23:48:22 2018] Launched impl_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 12883ms to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 13791 ms. Increasing delay to 6000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1766ms to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 12012 ms. Increasing delay to 6000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 412ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 270 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 119 seconds
+selectCodeEditor("VGA.v", 674, 304); // ce (w, ck)
+selectCodeEditor("VGA.v", 144, 296); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("VGA.v", 111, 160); // ce (w, ck)
+selectCodeEditor("VGA.v", 728, 148); // ce (w, ck)
+selectCodeEditor("VGA.v", 140, 258); // ce (w, ck)
+// Elapsed time: 132 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "wea"); // l (aQ, ck)
+selectCodeEditor("VGA.v", 75, 97); // ce (w, ck)
+// Elapsed time: 124 seconds
+selectCodeEditor("VGA.v", 175, 334); // ce (w, ck)
+selectCodeEditor("VGA.v", 175, 334, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("VGA.v", 190, 350); // ce (w, ck)
+selectCodeEditor("VGA.v", 190, 350, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("VGA.v", 197, 323); // ce (w, ck)
+selectCodeEditor("VGA.v", 197, 323, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("VGA.v", 193, 318); // ce (w, ck)
+selectCodeEditor("VGA.v", 193, 318, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("VGA.v", 229, 288); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 21 00:00:21 2018] Launched synth_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log [Wed Nov 21 00:00:21 2018] Launched impl_1... Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("VGA.v", 477, 244); // ce (w, ck)
+selectCodeEditor("VGA.v", 93, 196); // ce (w, ck)
+selectCodeEditor("VGA.v", 470, 253); // ce (w, ck)
+selectCodeEditor("VGA.v", 222, 221); // ce (w, ck)
+selectCodeEditor("VGA.v", 200, 169); // ce (w, ck)
+selectCodeEditor("VGA.v", 111, 167); // ce (w, ck)
+selectCodeEditor("VGA.v", 470, 252); // ce (w, ck)
+selectCodeEditor("VGA.v", 85, 204); // ce (w, ck)
+selectCodeEditor("VGA.v", 108, 181); // ce (w, ck)
+selectCodeEditor("VGA.v", 0, 304); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,285 MB. GUI used memory: 88 MB. Current time: 11/21/18 12:01:32 AM IST

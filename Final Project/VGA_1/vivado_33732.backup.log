@@ -1,0 +1,232 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov 20 19:32:30 2018
+# Process ID: 33732
+# Current directory: C:/Users/Gowtham/Desktop/Final Project/VGA_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33780 C:\Users\Gowtham\Desktop\Final Project\VGA_1\VGA_1.xpr
+# Log file: C:/Users/Gowtham/Desktop/Final Project/VGA_1/vivado.log
+# Journal file: C:/Users/Gowtham/Desktop/Final Project/VGA_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/Gowtham/Desktop/Final Project/VGA_1/imagex.coe'; using path 'C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/imagex.coe' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'image' generated file not found 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'image' generated file not found 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'image' generated file not found 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'image' generated file not found 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'image' generated file not found 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 876.961 ; gain = 141.398
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/imagex.coe' provided. It will be converted relative to IP Instance files '../../../../imagex.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/imagex.coe' provided. It will be converted relative to IP Instance files '../../../../imagex.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe'
+reset_run image_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Couldn't access process for termination
+
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe'
+set_property -dict [list CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18400} CONFIG.Read_Width_A {96} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Coe_File {C:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe}] [get_ips image]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe'
+generate_target all [get_files  {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'image'...
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1160.949 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all image] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -no_script -sync -force -quiet
+launch_runs -jobs 4 image_synth_1
+[Tue Nov 20 20:26:51 2018] Launched image_synth_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/image_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -directory {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.ip_user_files} -ipstatic_source_dir {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.cache/compile_simlib/modelsim} {questa=C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.cache/compile_simlib/questa} {riviera=C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.cache/compile_simlib/riviera} {activehdl=C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/imagex.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/imagex.coe}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/image.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/image.coe}}
+export_ip_user_files -of_objects  [get_files {{c:/Users/Gowtham/Desktop/Final Project/VGA_1/imagex.coe}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/Gowtham/Desktop/Final Project/VGA_1/imagex.coe}}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe}] [get_ips image]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Desktop/Final Project/VGA_1/img.coe' provided. It will be converted relative to IP Instance files '../../../../img.coe'
+generate_target all [get_files  {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'image'...
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1185.355 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all image] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -no_script -sync -force -quiet
+reset_run image_synth_1
+launch_runs -jobs 4 image_synth_1
+[Tue Nov 20 21:33:47 2018] Launched image_synth_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/image_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -directory {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.ip_user_files} -ipstatic_source_dir {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.cache/compile_simlib/modelsim} {questa=C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.cache/compile_simlib/questa} {riviera=C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.cache/compile_simlib/riviera} {activehdl=C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Nov 20 22:51:32 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log
+[Tue Nov 20 22:51:32 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1190.836 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A791A
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1853.246 ; gain = 662.410
+set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_project {C:/Users/Gowtham/Desktop/test_2 _initial_vga_1/test_2 _initial_vga_1/VGA_1/VGA_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1895.777 ; gain = 32.926
+update_compile_order -fileset sources_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A791A
+close_project
+close_hw
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Nov 20 23:25:43 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log
+[Tue Nov 20 23:25:43 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Nov 20 23:36:36 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log
+[Tue Nov 20 23:36:36 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1926.105 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A791A
+set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A791A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A791A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Nov 20 23:48:22 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log
+[Tue Nov 20 23:48:22 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Nov 21 00:00:21 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log
+[Wed Nov 21 00:00:21 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Gowtham/Desktop/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log
+reset_run synth_1

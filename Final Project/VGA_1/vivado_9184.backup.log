@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov 13 22:56:42 2018
+# Process ID: 9184
+# Current directory: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10932 C:\Users\Gowtham\Downloads\Compressed\test_2 _initial_vga_1\VGA_1\VGA_1.xpr
+# Log file: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/vivado.log
+# Journal file: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/HomePC/Desktop/test_2 _initial/VGA_1' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gowtham/Downloads/Compressed/jer_1.coe', nor could it be found using path 'C:/Users/HomePC/Desktop/jer_1.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 818.230 ; gain = 154.723
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/image.coe' provided. It will be converted relative to IP Instance files '../../../../image.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/image.coe' provided. It will be converted relative to IP Instance files '../../../../image.coe'
+set_property -dict [list CONFIG.Write_Width_A {72} CONFIG.Read_Width_A {72} CONFIG.Write_Width_B {72} CONFIG.Read_Width_B {72} CONFIG.Coe_File {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/image.coe}] [get_ips image]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/image.coe' provided. It will be converted relative to IP Instance files '../../../../image.coe'
+generate_target all [get_files  {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'image'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'image'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1073.105 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all image] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -no_script -sync -force -quiet
+reset_run image_synth_1
+launch_runs -jobs 4 image_synth_1
+[Tue Nov 13 23:49:19 2018] Launched image_synth_1...
+Run output will be captured here: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.runs/image_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -directory {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files} -ipstatic_source_dir {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/modelsim} {questa=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/questa} {riviera=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/riviera} {activehdl=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run image_synth_1
+export_ip_user_files -of_objects  [get_files C:/Users/Gowtham/Downloads/Compressed/jer_1.coe] -no_script -reset -force -quiet
+remove_files  C:/Users/Gowtham/Downloads/Compressed/jer_1.coe
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+generate_target all [get_files  {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}]
+catch { config_ip_cache -export [get_ips -all image] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -no_script -sync -force -quiet
+launch_runs -jobs 4 image_synth_1
+[Wed Nov 14 00:40:32 2018] Launched image_synth_1...
+Run output will be captured here: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.runs/image_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -directory {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files} -ipstatic_source_dir {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/modelsim} {questa=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/questa} {riviera=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/riviera} {activehdl=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Nov 14 00:41:33 2018] Launched image_synth_1, synth_1...
+Run output will be captured here:
+image_synth_1: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.runs/image_synth_1/runme.log
+synth_1: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.runs/synth_1/runme.log
+[Wed Nov 14 00:41:33 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1726.910 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1726.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:46 ; elapsed = 00:01:00 . Memory (MB): peak = 1795.293 ; gain = 686.699
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1904.910 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A791A
+set_property PROGRAM.FILE {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+close_hw
+close_design
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 14 00:57:37 2018...
