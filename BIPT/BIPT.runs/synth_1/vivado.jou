@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov 13 22:08:18 2018
+# Process ID: 5908
+# Current directory: C:/Users/Gowtham/Desktop/DS_project/BIPT/BIPT.runs/synth_1
+# Command line: vivado.exe -log Modules.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Modules.tcl
+# Log file: C:/Users/Gowtham/Desktop/DS_project/BIPT/BIPT.runs/synth_1/Modules.vds
+# Journal file: C:/Users/Gowtham/Desktop/DS_project/BIPT/BIPT.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Modules.tcl -notrace

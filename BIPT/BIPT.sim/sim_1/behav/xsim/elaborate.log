@@ -1,0 +1,14 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ff3eb27d74514c27a4d7e091e02111b8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_modules_behav xil_defaultlib.tb_modules xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Modules
+Compiling module xil_defaultlib.tb_modules
+WARNING: [XSIM 43-3373] "C:/Users/Gowtham/Desktop/DS_project/BIPT/BIPT.srcs/sim_1/new/tb_modules.v" Line 56. System function $fread is used as system task. This system function should have a LHS e.g. x=$fread().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_modules_behav
