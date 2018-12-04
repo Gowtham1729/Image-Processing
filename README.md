@@ -64,11 +64,11 @@ Download the poster for further details. This project contains 2 implementations
 2. FPGA implementation which can show the output of the image loaded in block ram on a monitor.(Final Project Folder)
 
 //
-module selection bits:
-1. RGB2Gray  	 			0000
+# module selection bits:
+1. **RGB2Gray(0000)**: 
 ![RGB2Gray](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/1.RGB2Gray.bmp)
 
-2. Increase brightness  	0001
+2. Increase brightness(0001)
 3. Decrerase brightness  	0010
 4. Color Inversion  		0011
 5. Red Filter		 		0100
