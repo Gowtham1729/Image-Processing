@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov 13 22:56:42 2018
+# Process ID: 9184
+# Current directory: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10932 C:\Users\Gowtham\Downloads\Compressed\test_2 _initial_vga_1\VGA_1\VGA_1.xpr
+# Log file: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/vivado.log
+# Journal file: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.xpr}
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Write_Width_A {72} CONFIG.Read_Width_A {72} CONFIG.Write_Width_B {72} CONFIG.Read_Width_B {72} CONFIG.Coe_File {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/image.coe}] [get_ips image]
+generate_target all [get_files  {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}]
+catch { config_ip_cache -export [get_ips -all image] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -no_script -sync -force -quiet
+reset_run image_synth_1
+launch_runs -jobs 4 image_synth_1
+export_simulation -of_objects [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -directory {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files} -ipstatic_source_dir {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/modelsim} {questa=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/questa} {riviera=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/riviera} {activehdl=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run image_synth_1
+export_ip_user_files -of_objects  [get_files C:/Users/Gowtham/Downloads/Compressed/jer_1.coe] -no_script -reset -force -quiet
+remove_files  C:/Users/Gowtham/Downloads/Compressed/jer_1.coe
+generate_target all [get_files  {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}]
+catch { config_ip_cache -export [get_ips -all image] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -no_script -sync -force -quiet
+launch_runs -jobs 4 image_synth_1
+export_simulation -of_objects [get_files {{C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.srcs/sources_1/ip/image/image.xci}}] -directory {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files} -ipstatic_source_dir {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/modelsim} {questa=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/questa} {riviera=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/riviera} {activehdl=C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+close_design

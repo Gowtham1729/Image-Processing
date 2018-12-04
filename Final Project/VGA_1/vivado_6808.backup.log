@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov 14 00:57:51 2018
+# Process ID: 6808
+# Current directory: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16316 C:\Users\Gowtham\Downloads\Compressed\test_2 _initial_vga_1\VGA_1\VGA_1.xpr
+# Log file: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/vivado.log
+# Journal file: C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Gowtham/Downloads/Compressed/test_2 _initial_vga_1/VGA_1/VGA_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:43 . Memory (MB): peak = 885.418 ; gain = 142.734
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 14 01:00:22 2018...

@@ -1,0 +1,73 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Nov 21 03:39:27 2018
+| Host         : Gowtham running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file vga_syncIndex_control_sets_placed.rpt
+| Design       : vga_syncIndex
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              24 |            7 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              74 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+---------------+------------------+------------------+----------------+
+|   Clock Signal   | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------+---------------+------------------+------------------+----------------+
+|  clk_BUFG        | vsyncoff      | vsyncon          |                1 |              2 |
+|  clk_BUFG        | hsyncoff      | hsyncon          |                1 |              2 |
+|  clock_IBUF_BUFG |               |                  |                1 |              2 |
+|  clk_BUFG        | ec            | hreset           |                2 |             20 |
+|  clk_BUFG        | hreset        | vc0              |                3 |             20 |
+|  clk_BUFG        |               |                  |                6 |             22 |
+| ~pcount          |               | red[3]_i_1_n_0   |                7 |             24 |
+| ~pcount          | red1          | addra            |                4 |             30 |
++------------------+---------------+------------------+------------------+----------------+
+
+

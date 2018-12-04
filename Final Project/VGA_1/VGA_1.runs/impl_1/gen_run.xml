@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542751318">
+  <File Type="ROUTE-PWR" Name="vga_syncIndex_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="vga_syncIndex.tcl"/>
+  <File Type="BITSTR-BMM" Name="vga_syncIndex_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="vga_syncIndex_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="vga_syncIndex_reports.tcl"/>
+  <File Type="OPT-DCP" Name="vga_syncIndex_opt.dcp"/>
+  <File Type="OPT-DRC" Name="vga_syncIndex_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="vga_syncIndex.hwdef"/>
+  <File Type="PWROPT-DCP" Name="vga_syncIndex_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="vga_syncIndex_placed.dcp"/>
+  <File Type="PLACE-IO" Name="vga_syncIndex_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="vga_syncIndex_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="vga_syncIndex_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="vga_syncIndex_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="vga_syncIndex_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="vga_syncIndex.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="vga_syncIndex_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="vga_syncIndex.bin"/>
+  <File Type="PHYSOPT-DCP" Name="vga_syncIndex_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="vga_syncIndex.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="vga_syncIndex_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="vga_syncIndex_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="vga_syncIndex_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="vga_syncIndex_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="vga_syncIndex_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="vga_syncIndex_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="vga_syncIndex.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="vga_syncIndex_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="vga_syncIndex.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="vga_syncIndex_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vga_syncIndex_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="vga_syncIndex.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="vga_syncIndex_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="vga_syncIndex_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="vga_syncIndex_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="vga_syncIndex_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="vga_syncIndex_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="vga_syncIndex_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="vga_syncIndex_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="vga_syncIndex_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="vga_syncIndex_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="vga_syncIndex_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="vga_syncIndex_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="vga_syncIndex_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="vga_syncIndex.bit"/>
+  <File Type="BITSTR-RBT" Name="vga_syncIndex.rbt"/>
+  <File Type="BITSTR-NKY" Name="vga_syncIndex.nky"/>
+  <File Type="BG-DRC" Name="vga_syncIndex.drc"/>
+  <File Type="RDI-RDI" Name="vga_syncIndex.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/VGA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/img.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/image.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imgx.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/flower.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="vga_syncIndex"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constr.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="image"/>
+</GenRun>

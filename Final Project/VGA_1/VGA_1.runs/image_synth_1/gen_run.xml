@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="image_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542751303">
+  <File Type="PA-TCL" Name="image.tcl"/>
+  <File Type="REPORTS-TCL" Name="image_reports.tcl"/>
+  <File Type="RDS-RDS" Name="image.vds"/>
+  <File Type="RDS-UTIL" Name="image_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="image_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="image.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/image">
+    <File Path="$PSRCDIR/sources_1/ip/image/image.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="image"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/image">
+    <File Path="$PSRCDIR/sources_1/ip/image/image.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="image"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
