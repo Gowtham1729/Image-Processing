@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sources_1/new/blur.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blur
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sim_1/new/blur_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blur_tb

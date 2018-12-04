@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Nov  9 13:04:02 2018
+# Process ID: 12728
+# Current directory: C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.sim/sim_1/behav/xsim/xsim.dir/blur_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.sim/sim_1/behav/xsim/xsim.dir/blur_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.sim/sim_1/behav/xsim/xsim.dir/blur_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Nov  9 13:04:09 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 54.148 ; gain = 1.383
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov  9 13:04:09 2018...

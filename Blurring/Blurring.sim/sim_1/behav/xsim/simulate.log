@@ -1,0 +1,23 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+WARNING: file C:\Users\Gowtham\Desktop\left.bmp could not be opened
+WARNING: file C:\Users\Gowtham\Desktop\right.bmp could not be opened
+WARNING: file C:\Users\Gowtham\Desktop\up.bmp could not be opened
+WARNING: file C:\Users\Gowtham\Desktop\down.bmp could not be opened
+WARNING: file C:\Users\Gowtham\Desktop\leftup.bmp could not be opened
+WARNING: file C:\Users\Gowtham\Desktop\leftdown.bmp could not be opened
+WARNING: file C:\Users\Gowtham\Desktop\rightup.bmp could not be opened
+WARNING: file C:\Users\Gowtham\Desktop\rightdown.bmp could not be opened
+     -20000
+WARNING: Insufficient data from the input file for $fread
+ERROR: File descriptor (0) passed to $fread in file C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sim_1/new/blur_tb.v at line 93 is not valid.
+ERROR: File descriptor (0) passed to $fread in file C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sim_1/new/blur_tb.v at line 96 is not valid.
+ERROR: File descriptor (0) passed to $fread in file C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sim_1/new/blur_tb.v at line 99 is not valid.
+ERROR: File descriptor (0) passed to $fread in file C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sim_1/new/blur_tb.v at line 102 is not valid.
+ERROR: File descriptor (0) passed to $fread in file C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sim_1/new/blur_tb.v at line 105 is not valid.
+ERROR: File descriptor (0) passed to $fread in file C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sim_1/new/blur_tb.v at line 108 is not valid.
+ERROR: File descriptor (0) passed to $fread in file C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sim_1/new/blur_tb.v at line 111 is not valid.
+ERROR: File descriptor (0) passed to $fread in file C:/Users/Gowtham/Desktop/DS_project/Blurring/Blurring.srcs/sim_1/new/blur_tb.v at line 114 is not valid.
+size -      360054
+startpos :          54
+width -         400; height -         300
