@@ -83,4 +83,4 @@ module selection bits:
 16. Gaussian Blur			1111
 
 
-// Please feel free to comment any question, issues or doubts
+####################    Please feel free to ask any question, issues or doubts       ##############################
