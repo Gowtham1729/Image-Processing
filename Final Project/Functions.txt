@@ -1,0 +1,16 @@
+RGB2Gray  	 			0000
+Increase brightness  	0001
+Decrerase brightness  	0010
+Color Inversion  		0011
+Red Filter		 		0100
+Blue Filter 			0101
+Green Filter 			0110
+Original Image			0111
+Average Blurring		1000
+Sobel Edge Detection	1001
+Edge Detection			1010
+Motion Blurring	xy		1011
+Emboss					1100
+Sharpen					1101
+Motion Blur x			1110
+Gaussian Blur			1111
