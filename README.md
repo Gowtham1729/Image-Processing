@@ -1,4 +1,5 @@
 # Image-Processing-Toolbox
+(ES 203: Digital Systems Project, Prof. Joycee Mekie, IITGN)
 
 # Introduction
 Image Processing Toolbox in Verilog using Basys3 FPGA
@@ -64,19 +65,22 @@ Download the poster for further details. This project contains 2 implementations
 
 //
 module selection bits:
-RGB2Gray  	 			0000
-Increase brightness  	0001
-Decrerase brightness  	0010
-Color Inversion  		0011
-Red Filter		 		0100
-Blue Filter 			0101
-Green Filter 			0110
-Original Image			0111
-Average Blurring		1000
-Sobel Edge Detection	1001
-Edge Detection			1010
-Motion Blurring	xy		1011
-Emboss					1100
-Sharpen					1101
-Motion Blur x			1110
-Gaussian Blur			1111
+1. RGB2Gray  	 			0000
+2. Increase brightness  	0001
+3. Decrerase brightness  	0010
+4. Color Inversion  		0011
+5. Red Filter		 		0100
+6. Blue Filter 			0101
+7. Green Filter 			0110
+8. Original Image			0111
+9. Average Blurring		1000
+10. Sobel Edge Detection	1001
+11. Edge Detection			1010
+12. Motion Blurring	xy		1011
+13. Emboss					1100
+14. Sharpen					1101
+15. Motion Blur x			1110
+16. Gaussian Blur			1111
+
+
+// Please feel free to comment any question, issues or doubts
