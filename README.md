@@ -67,10 +67,19 @@ Download the poster for further details. This project contains 2 implementations
 # Module Selection Bits
 
 1. **RGB2Gray(0000)**: 
-![RGB2Gray](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/1.RGB2Gray.bmp)
 
-2. Increase brightness(0001)
-3. Decrerase brightness  	0010
+![RGB2Gray](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/1.RGB2Gray.bmp).
+
+2. **Increase brightness(0001)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/2.I_brightness.bmp)
+
+
+3. **Decrerase brightness(0010)**:
+
+![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/3.D_brightness.bmp)
+
+
 4. Color Inversion  		0011
 5. Red Filter		 		0100
 6. Blue Filter 			0101
