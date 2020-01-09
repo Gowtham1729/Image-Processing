@@ -70,11 +70,22 @@ It seems to me that the project structure is very unclear. So, I included this s
 This project contains two implementations of the same image processing operations.
 1. Read and Write from PC.
 ``` image(located somewhere in your pc) -----> coe file generated from python ------> read coe file using verilog read function ------> do the required operations ------> Write the new image somewhere in your pc```
-**Note**: There are functions for reading and writing a file in verilog. Remember to convert the image into coe file but you can write the image in bmp format. Learn how a .bmp image file is structured.
+
+
+    **Note**: There are functions for reading and writing a file in verilog. Remember to convert the image into coe file but you can write the image in bmp format. Learn how a .bmp image file is structured. Folders BIPT and BLurring contains this implementation.
 
 2. load the image into the board and display it on a monitor.
-This is little complicated than the above implementation because we need a board, monitor and the ram size is limited.
 ```image(located somewhere in your pc) -----> coe file generated from python ------> load this coe file manually into the block-ram of the board ------> do the required operations by selecting seleting assigned keys on board  ------> View the changes in the image in realtime on monitor```
+
+    **Note**:This is little complicated than the above implementation because we need a board, monitor and the ram size is limited. You can find this implementaion in Final Project/VGA_1 folder. Also remember that your board has a limited size, so you can only use images of very small size. Adjust according to your board size.
+
+**COE file**: 
+This is nothing but a list of binary or hexadecimal numbers ordered in a specific format. Refer https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/cgn_r_coe_file_syntax.htm for more info.
+
+We need to convert our image into a list of binary numbers where each binary number denotes a pixel value of the image. You can generate this using coe_generator.py file. You can do basic image operations such as increasing/decreasing brightness, RGB2Gray, colour inversions, various color filters using the generated file. Inorder to perform these basic image processing operations we just need to access to a single pixel at a time. For example, we can convert color image to black and white by the operation r+g+b/3 to that pixel. Hence, we read a single pixel at a time(clock cycle) to do the operation and show the result on the screen or store the image in the computer. 
+You cannot do any kinds of blurring or edge detection using the file generated from coe_generator.py file because we need access to the pixels around that pixel to generate a result.
+
+Inorder to apply blurring, edge detection and other filter we need to apply a convolution on the image using various kernels. https://www.wikiwand.com/en/Kernel_(image_processing) As you can see from the website we need access to the pixels around the pixel we are operating. Since, I didn't find a way to access multiple parts of the block memory in a single clock cycle. 
 
 
 //sel_module is used for selecting the function and val to adjust brightness, filters etc.,
@@ -144,4 +155,3 @@ This is little complicated than the above implementation because we need a board
 16. **Gaussian Blur(1111)**:
 
 ![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
-
