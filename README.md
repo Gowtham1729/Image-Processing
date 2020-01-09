@@ -86,12 +86,14 @@ We need to convert our image into a list of binary numbers where each binary num
 You cannot do any kinds of blurring or edge detection using the file generated from coe_generator.py file because we need access to the pixels around that pixel to generate a result.
 
 Inorder to apply blurring, edge detection and other filter we need to apply a convolution on the image using various kernels. https://www.wikiwand.com/en/Kernel_(image_processing) As you can see from the website we need access to the pixels around the pixel we are operating. Since, I didn't find a way to access multiple parts of the block memory in a single clock cycle. Grayscale image is enough for applying these kernels/filters.
-So, I used python converted the image to grayscale and placed all the required pixels(up, down, right etc., pixel values around a pixel) for performing a kernel operations in a single line(as a single big binary number). I don't think this is an efficeint method because it consumes more memory than the single grayscale image. This is just a workaround since I couldn't find other way at that time.
+So, I used python converted the image to grayscale and placed all the required pixels(up, down, right etc., pixel values around a pixel) for performing a kernel operations in a single line(as a single big binary number). I don't think this is an efficeint method because it consumes more memory than the single grayscale image.
+
+This is just a workaround since I couldn't find other way at that time.
 Now you can perform all the blurring operations by using this file.
 
 But my final project should be able to perform both the basic operations and also convolutions. So, I had to generate a new coe file which consists of the colored pixel value in the first half which is follwed by grayscale pixel value of the surrounding pixels.
 
-Please use the python files according to your use case and try to write your own files for generating coe files using python or any other programming language of your choice.
+Please use the python files according to your use case and try to write your own files for generating coe files using python or any other programming language of your choice. Verilog code of the final project https://github.com/Gowtham1729/Image-Processing/blob/master/Final%20Project/VGA_1/VGA_1.srcs/sources_1/new/VGA.v
 
 //sel_module is used for selecting the function and val to adjust brightness, filters etc.,
 ## Module Selection Bits
