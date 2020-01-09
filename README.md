@@ -1,7 +1,7 @@
 # Image-Processing-Toolbox
 (ES 203: Digital Systems Project, Prof. Joycee Mekie, IITGN)
 
-# Introduction
+## Introduction
 Image Processing Toolbox in Verilog using Basys3 FPGA
 In this project, we have implemented image processing operations
 (those involving convolutions) on a given image through FPGA
@@ -11,7 +11,7 @@ depending user’s choice in the FPGA itself and then display it through
 a VGA display. We use Verilog as the hardware description language
 and python for converting the given digital image into binary form.
 
-# Block Memory
+## Block Memory
 To feed the image into verilog, we need to convert it binary (.coe file).
 We do that using python. The converted image is such that it has as
 many rows as the total number of pixel and each row having 24 bit
@@ -30,7 +30,7 @@ address.
 
 
 
-# VGA Interface
+## VGA Interface
 We wrote the code for 480p
 display set at 60Hz refresh rate.
 Refresh rate is the number of
@@ -63,8 +63,22 @@ Download the poster for further details. This project contains 2 implementations
 1. Verilog implementation which can read, process and write images from your system.(BIPT and Blurring Folder)
 2. FPGA implementation which can show the output of the image loaded in block ram on a monitor.(Final Project Folder)
 
+
+## Development
+
+It seems to me that the project structure is very unclear. So, I included this section for the development of this project.
+This project contains two implementations of the same image processing operations.
+1. Read and Write from PC.
+``` image(located somewhere in your pc) -----> coe file generated from python ------> read coe file using verilog read function ------> do the required operations ------> Write the new image somewhere in your pc```
+Note: There are functions for reading and writing a file in verilog. Remember to convert the image into coe file but you can write the image in bmp format. Learn how a .bmp image file is structured.
+
+2. load the image into the board and display it on a monitor.
+This is little complicated than the above implementation because we need a board, monitor and the ram size is limited.
+```image(located somewhere in your pc) -----> coe file generated from python ------> load this coe file manually into the block-ram of the board ------> do the required operations by selecting seleting assigned keys on board  ------> View the changes in the image in realtime on monitor```
+
+
 //sel_module is used for selecting the function and val to adjust brightness, filters etc.,
-# Module Selection Bits
+## Module Selection Bits
 
 1. **RGB2Gray(0000)**: 
 
