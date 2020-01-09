@@ -70,7 +70,7 @@ It seems to me that the project structure is very unclear. So, I included this s
 This project contains two implementations of the same image processing operations.
 1. Read and Write from PC.
 ``` image(located somewhere in your pc) -----> coe file generated from python ------> read coe file using verilog read function ------> do the required operations ------> Write the new image somewhere in your pc```
-Note: There are functions for reading and writing a file in verilog. Remember to convert the image into coe file but you can write the image in bmp format. Learn how a .bmp image file is structured.
+**Note**: There are functions for reading and writing a file in verilog. Remember to convert the image into coe file but you can write the image in bmp format. Learn how a .bmp image file is structured.
 
 2. load the image into the board and display it on a monitor.
 This is little complicated than the above implementation because we need a board, monitor and the ram size is limited.
