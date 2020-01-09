@@ -85,8 +85,13 @@ This is nothing but a list of binary or hexadecimal numbers ordered in a specifi
 We need to convert our image into a list of binary numbers where each binary number denotes a pixel value of the image. You can generate this using coe_generator.py file. You can do basic image operations such as increasing/decreasing brightness, RGB2Gray, colour inversions, various color filters using the generated file. Inorder to perform these basic image processing operations we just need to access to a single pixel at a time. For example, we can convert color image to black and white by the operation r+g+b/3 to that pixel. Hence, we read a single pixel at a time(clock cycle) to do the operation and show the result on the screen or store the image in the computer. 
 You cannot do any kinds of blurring or edge detection using the file generated from coe_generator.py file because we need access to the pixels around that pixel to generate a result.
 
-Inorder to apply blurring, edge detection and other filter we need to apply a convolution on the image using various kernels. https://www.wikiwand.com/en/Kernel_(image_processing) As you can see from the website we need access to the pixels around the pixel we are operating. Since, I didn't find a way to access multiple parts of the block memory in a single clock cycle. 
+Inorder to apply blurring, edge detection and other filter we need to apply a convolution on the image using various kernels. https://www.wikiwand.com/en/Kernel_(image_processing) As you can see from the website we need access to the pixels around the pixel we are operating. Since, I didn't find a way to access multiple parts of the block memory in a single clock cycle. Grayscale image is enough for applying these kernels/filters.
+So, I used python converted the image to grayscale and placed all the required pixels(up, down, right etc., pixel values around a pixel) for performing a kernel operations in a single line(as a single big binary number). I don't think this is an efficeint method because it consumes more memory than the single grayscale image. This is just a workaround since I couldn't find other way at that time.
+Now you can perform all the blurring operations by using this file.
 
+But my final project should be able to perform both the basic operations and also convolutions. So, I had to generate a new coe file which consists of the colored pixel value in the first half which is follwed by grayscale pixel value of the surrounding pixels.
+
+Please use the python files according to your use case and try to write your own files for generating coe files using python or any other programming language of your choice.
 
 //sel_module is used for selecting the function and val to adjust brightness, filters etc.,
 ## Module Selection Bits
@@ -155,3 +160,6 @@ Inorder to apply blurring, edge detection and other filter we need to apply a co
 16. **Gaussian Blur(1111)**:
 
 ![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
+
+
+Please star the repo :)
