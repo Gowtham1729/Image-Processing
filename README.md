@@ -92,6 +92,7 @@ This is just a workaround since I couldn't find other way at that time.
 Now you can perform all the blurring operations by using this file.
 
 But my final project should be able to perform both the basic operations and also convolutions. So, I had to generate a new coe file which consists of the colored pixel value in the first half which is follwed by grayscale pixel value of the surrounding pixels.
+Run kernel_coe_generator.py and then parallel_image_generator.py to get final coe file.
 
 Please use the python files according to your use case and try to write your own files for generating coe files using python or any other programming language of your choice. Verilog code of the final project https://github.com/Gowtham1729/Image-Processing/blob/master/Final%20Project/VGA_1/VGA_1.srcs/sources_1/new/VGA.v
 
