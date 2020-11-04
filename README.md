@@ -9,7 +9,7 @@ Basys-3. We send a given image in binary form to the FPGA Block
 RAM and then perform some specific image processing applications
 depending user’s choice in the FPGA itself and then display it through
 a VGA display. We use Verilog as the hardware description language
-and python for converting the given digital image into binary form.
+and python for converting the given digital image into binary form. (We used Vivado software to make this)
 
 ## Block Memory
 To feed the image into verilog, we need to convert it binary (.coe file).
