@@ -17,37 +17,16 @@ For convolution operations, multiple pixels are needed simultaneously to apply t
 
 
 ## VGA Interface
-We wrote the code for 480p
-display set at 60Hz refresh rate.
-Refresh rate is the number of
-times the screen refreshes in a
-second. For each refresh, each
-pixel (480X640) is refreshed one
-after another. For this, the
-counter starts from the origin
-(0,0) and travels to (0, 799) and so
-on till (524, 799). These include
-the non display area as well along
-with the retrace as shown on the
-figures on the left. These are fed
-to the screen using hsync and
-vsync.
-The hsync signal becomes “0”
-after the counter reaches the end
-of the right border which initiates
-the retrace. After the retrace, the
-the signal once, once again
-becomes “1”, initiating the left
-border and tracing on the display
-area.
-Also, for the screen, we only start
-the display from some point and
-end at the number of pixels added
-to that in both the directions.
+The VGA interface code was developed for a 480p display with a 60Hz refresh rate. The refresh rate refers to the number of times the screen refreshes per second. For each refresh, each pixel (480x640) is updated sequentially. To accomplish this, a counter starts at the origin (0,0) and moves to (0, 799) and so forth until it reaches (524, 799). This process includes both the non-display area and the retrace, as depicted in the accompanying figures.
 
-Download the poster for further details. This project contains 2 implementations:
-1. Verilog implementation which can read, process and write images from your system.(BIPT and Blurring Folder)
-2. FPGA implementation which can show the output of the image loaded in block ram on a monitor.(Final Project Folder)
+The hsync signal transitions to "0" when the counter reaches the end of the right border, triggering the retrace. After the retrace, the signal returns to "1", initiating the left border and scanning the display area.
+
+For the screen display, the image is only shown starting from a specific point and ending at the sum of that point and the number of pixels in both horizontal and vertical directions.
+
+Please refer to the project poster for additional information. This project comprises two separate implementations:
+
+1. Verilog Implementation: This version can read, process, and write images from your system. You can find the relevant files in the "BIPT" and "Blurring" folders.
+2. FPGA Implementation: This version demonstrates the output of the image loaded into the block RAM on a monitor. The necessary files are located in the "Final Project" folder.
 
 
 ## Development
