@@ -2,31 +2,17 @@
 (ES 203: Digital Systems Project, Prof. Joycee Mekie, IITGN)
 
 ## Introduction
-Image Processing Toolbox in Verilog using Basys3 FPGA
-In this project, we have implemented image processing operations
-(those involving convolutions) on a given image through FPGA
-Basys-3. We send a given image in binary form to the FPGA Block
-RAM and then perform some specific image processing applications
-depending user’s choice in the FPGA itself and then display it through
-a VGA display. We use Verilog as the hardware description language
-and python for converting the given digital image into binary form. (We used Vivado software to make this)
+The Image Processing Toolbox is a Verilog-based implementation designed for the Basys3 FPGA. This project facilitates various image processing operations, specifically convolution-based techniques, on a given input image. The image is sent to the FPGA Block RAM in binary format, where selected image processing operations are performed according to the user's choice. The processed image is then displayed via a VGA display. The hardware description language used for this project is Verilog, while Python is employed to convert digital images into binary form. The Vivado software suite was utilized for development.
 
 ## Block Memory
-To feed the image into verilog, we need to convert it binary (.coe file).
-We do that using python. The converted image is such that it has as
-many rows as the total number of pixel and each row having 24 bit
-(8X3). So a 160X115p image will have 18400 rows.
-Then a block Memory Module is created in the project which has as
-many addresses as the number of rows and 24 data bits. So, for the
-above example, it will have 215 address bits.
-This Memory module, like other modules can be instantiated and used
-in the main module. The module has inputs as clock, address,datain
-and read-write command and the dataout as output. So, for a given
-address, it gives the daa at that address during that clock cycle. And
-thus can give only one data set at a time (here one pixel).
-For convolutions, we need multiple pixels at a time to use the
-kernels, that we access by adding and subtracting values to the
-address.
+The Block Memory module serves as a storage component for the image data in binary format (i.e., a .coe file) within the Verilog project. To convert the image into this binary format, we utilize a Python script. The converted image has a number of rows equal to the total number of pixels, and each row contains 24 bits (8 bits for each color channel). For instance, a 160x115 pixel image would have 18,400 rows.
+
+In the project, a Block Memory module is created with as many addresses as the number of rows and 24 data bits. For the example mentioned above, the module would have 2^15 address bits. This memory module can then be instantiated and used in the main module.
+
+
+The Block Memory module includes inputs such as clock, address, data-in, and read-write command, as well as a data-out output.
+ For a given address, the module provides the data at that address during the corresponding clock cycle. As a result, only one data set (i.e., one pixel) can be accessed at a time.
+For convolution operations, multiple pixels are needed simultaneously to apply the kernel. These pixels can be accessed by adding and subtracting values from the address accordingly.
 
 
 
