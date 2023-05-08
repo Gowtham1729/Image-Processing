@@ -31,103 +31,117 @@ Please refer to the project poster for additional information. This project comp
 
 ## Development
 
-It seems to me that the project structure is very unclear. So, I included this section for the development of this project.
-This project contains two implementations of the same image processing operations.
-1. Read and Write from PC.
-``` image(located somewhere in your pc) -----> coe file generated from python ------> read coe file using verilog read function ------> do the required operations ------> Write the new image somewhere in your pc```
+The project structure has been updated for clarity, with two distinct implementations of the same image processing operations:
+
+1. **Read and Write from PC:**
+```
+image (located on your PC) 
+-----> .coe file generated from Python 
+-----> read .coe file using Verilog read function 
+-----> perform required operations 
+-----> write the new image to your PC
+```
+**Note**: Verilog includes functions for reading and writing files. Remember to convert the image into a .coe file, but the output image can be written in .bmp format. It is essential to understand the structure of a .bmp image file. You can find this implementation in the "BIPT" and "Blurring" folders.
+
+2. **Load the image onto the board and display it on a monitor:**
+```
+image (located on your PC) 
+-----> .coe file generated from Python 
+-----> manually load the .coe file into the board's block RAM 
+-----> perform required operations by selecting assigned keys on the board
+-----> view the changes in the image in real-time on the monitor
+```
+**Note**: This implementation is more complex than the first because it requires a board, monitor, and has limited RAM size. You can find this implementation in the "Final Project/VGA_1" folder. Keep in mind that your board has limited memory, so you can only use small-sized images. Adjust the image size according to your board's capacity.
+
+**COE (Coefficient) File**: 
+A COE file is essentially a list of binary or hexadecimal numbers ordered in a specific format. It is commonly used to initialize block RAMs or ROMs in Xilinx FPGA designs. For more information on the syntax and structure of COE files, refer to the Xilinx documentation: [COE File Syntax](https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/cgn_r_coe_file_syntax.htm).
 
 
-    **Note**: There are functions for reading and writing a file in verilog. Remember to convert the image into coe file but you can write the image in bmp format. Learn how a .bmp image file is structured. Folders BIPT and BLurring contains this implementation.
+To perform basic image processing operations, you need to convert the image into a list of binary numbers, where each binary number represents a pixel value of the image. You can generate this list using the coe_generator.py file. This allows you to execute basic operations such as increasing/decreasing brightness, RGB2Gray conversion, color inversions, and applying various color filters. To perform these operations, you only need access to a single pixel at a time. For instance, converting a color image to black and white can be done by applying the formula (r+g+b)/3 to each pixel. Therefore, you can read a single pixel at a time (one per clock cycle), perform the operation, and either display the result on the screen or store the image on the computer.
 
-2. load the image into the board and display it on a monitor.
-```image(located somewhere in your pc) -----> coe file generated from python ------> load this coe file manually into the block-ram of the board ------> do the required operations by selecting seleting assigned keys on board  ------> View the changes in the image in realtime on monitor```
+However, the file generated from coe_generator.py is not suitable for tasks such as blurring or edge detection, as these operations require convolution with various kernels. To apply these kernels/filters, you need access to neighboring pixels around the target pixel. Since it's challenging to access multiple parts of block memory in a single clock cycle, a different approach is needed.
 
-    **Note**:This is little complicated than the above implementation because we need a board, monitor and the ram size is limited. You can find this implementaion in Final Project/VGA_1 folder. Also remember that your board has a limited size, so you can only use images of very small size. Adjust according to your board size.
+To work around this limitation, you can use Python to convert the image to grayscale and arrange all the required pixels (up, down, right, etc., pixel values around a pixel) for performing kernel operations in a single line (as a single large binary number). This method is not the most efficient, as it consumes more memory than a single grayscale image. However, it enables the application of kernels/filters such as blurring and edge detection.
 
-**COE file**: 
-This is nothing but a list of binary or hexadecimal numbers ordered in a specific format. Refer https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/cgn_r_coe_file_syntax.htm for more info.
+The method described earlier, involving the conversion of an image to grayscale and organizing the necessary neighboring pixels in a single line (as a single large binary number), serves as a workaround to perform blurring and other convolution-based operations. Although it may not be the most efficient solution, it enables you to apply various kernels/filters, such as blurring and edge detection, which would otherwise be challenging due to limitations in accessing multiple parts of block memory in a single clock cycle.
 
-We need to convert our image into a list of binary numbers where each binary number denotes a pixel value of the image. You can generate this using coe_generator.py file. You can do basic image operations such as increasing/decreasing brightness, RGB2Gray, colour inversions, various color filters using the generated file. Inorder to perform these basic image processing operations we just need to access to a single pixel at a time. For example, we can convert color image to black and white by the operation r+g+b/3 to that pixel. Hence, we read a single pixel at a time(clock cycle) to do the operation and show the result on the screen or store the image in the computer. 
-You cannot do any kinds of blurring or edge detection using the file generated from coe_generator.py file because we need access to the pixels around that pixel to generate a result.
+To create a final project that supports both basic operations and convolution-based operations, you will need to generate a new .coe file containing both color pixel values and grayscale pixel values of the surrounding pixels. This can be achieved by running two Python scripts sequentially:
 
-Inorder to apply blurring, edge detection and other filter we need to apply a convolution on the image using various kernels. https://www.wikiwand.com/en/Kernel_(image_processing) As you can see from the website we need access to the pixels around the pixel we are operating. Since, I didn't find a way to access multiple parts of the block memory in a single clock cycle. Grayscale image is enough for applying these kernels/filters.
-So, I used python converted the image to grayscale and placed all the required pixels(up, down, right etc., pixel values around a pixel) for performing a kernel operations in a single line(as a single big binary number). I don't think this is an efficeint method because it consumes more memory than the single grayscale image.
+1. Run `kernel_coe_generator.py` to create a .coe file with the grayscale pixel values of the surrounding pixels, which will be used for convolution-based operations.
+2. Run `parallel_image_generator.py` to combine the colored pixel values with the grayscale pixel values generated in the previous step into a single .coe file.
 
-This is just a workaround since I couldn't find other way at that time.
-Now you can perform all the blurring operations by using this file.
+By using this combined .coe file, your final project will be able to perform both basic image processing operations and convolution-based operations such as blurring and edge detection.
 
-But my final project should be able to perform both the basic operations and also convolutions. So, I had to generate a new coe file which consists of the colored pixel value in the first half which is follwed by grayscale pixel value of the surrounding pixels.
-Run kernel_coe_generator.py and then parallel_image_generator.py to get final coe file.
+Depending on your specific requirements, you can use the provided Python scripts or create your own to generate .coe files for image processing operations. Feel free to modify the existing Python files or write new ones in Python or any other programming language of your choice to suit your needs.
 
-Please use the python files according to your use case and try to write your own files for generating coe files using python or any other programming language of your choice. Verilog code of the final project https://github.com/Gowtham1729/Image-Processing/blob/master/Final%20Project/VGA_1/VGA_1.srcs/sources_1/new/VGA.v
+To access the Verilog code for the final project, visit the following GitHub repository: Image-Processing/Final Project/VGA_1/VGA.v
 
-//sel_module is used for selecting the function and val to adjust brightness, filters etc.,
-## Module Selection Bits
+By customizing the .coe file generation process and utilizing the provided Verilog code, you can build a comprehensive image processing solution that supports basic operations as well as convolution-based operations.
 
-1. **RGB2Gray(0000)**: 
+The `sel_module` is used for selecting the desired image processing function, and the `val` parameter is used to adjust brightness, filters, etc. Below is a list of available functions and their corresponding module selection bits:
+
+1. **RGB2Gray (0000)**: 
 
 ![RGB2Gray](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/1.RGB2Gray.bmp).
 
-2. **Increase brightness(0001)**:
+2. **Increase brightness (0001)**:
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/2.I_brightness.bmp)
+![Increase Brightness](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/2.I_brightness.bmp)
 
+3. **Decrease brightness (0010)**:
 
-3. **Decrerase brightness(0010)**:
+![Decrease Brightness](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/3.D_brightness.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/3.D_brightness.bmp)
+4. **Color Inversion (0011)**:
 
-4. **Color Inversion(0011)**:
+![Color Inversion](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/4.Invert.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/4.Invert.bmp)
+5. **Red Filter (0100)**:
 
-5. **Red Filter(0100)**:
+![Red Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/5.Red_filter.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/5.Red_filter.bmp)
+6. **Blue Filter (0101)**:
 
-6. **Blue Filter(0101)**:
+![Blue Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/6.Green_filter.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/6.Green_filter.bmp)
+7. **Green Filter (0110)**:
 
-7. **Green Filter(0110)**:
+![Green Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/7.Blue_filter.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/7.Blue_filter.bmp)
+8. **Original Image (0111)**:
 
-8. **Original Image(0111)**:
+![Original Image](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/8.Original.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/8.Original.bmp)
+9. **Average Blurring (1000)**:
 
-9. **Average Blurring(1000)**:
+![Average Blurring](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
+10. **Sobel Edge Detection (1001)**:
 
-10. **Sobel Edge Detection(1001)**:
+![Sobel Edge Detection](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sobel_edge.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sobel_edge.bmp)
+11. **Edge Detection (1010)**:
 
-11. **Edge Detection(1010)**:
+![Edge Detection](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/outline.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/outline.bmp)
+12. **Motion Blurring xy (1011)**:
 
-12. **Motion Blurring	xy(1011)**:
+![Motion Blurring xy](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp)
+13. **Emboss (1100)**:
 
-13. **Emboss(1100)**:
+![Emboss](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/embos.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/embos.bmp)
+14. **Sharpen (1101)**:
 
-14. **Sharpen(1101)**:
+![Sharpen](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sharpen.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sharpen.bmp)
+15. **Motion Blur in x direction (1110)**:
 
-15. **Motion Blur in x direction(1110):
+![Motion Blur in x direction](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp)
+16. **Gaussian Blur (1111)**:
 
-16. **Gaussian Blur(1111)**:
+![Gaussian Blur](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
 
-![](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
-
-
-Please star the repo :)
+If you find this repository helpful, please consider giving it a star on GitHub :)
