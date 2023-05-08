@@ -28,6 +28,9 @@ Please refer to the project poster for additional information. This project comp
 1. Verilog Implementation: This version can read, process, and write images from your system. You can find the relevant files in the "BIPT" and "Blurring" folders.
 2. FPGA Implementation: This version demonstrates the output of the image loaded into the block RAM on a monitor. The necessary files are located in the "Final Project" folder.
 
+## COE (Coefficient) File: 
+A COE file is essentially a list of binary or hexadecimal numbers ordered in a specific format. It is commonly used to initialize block RAMs or ROMs in Xilinx FPGA designs. For more information on the syntax and structure of COE files, refer to the Xilinx documentation: [COE File Syntax](https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/cgn_r_coe_file_syntax.htm).
+
 
 ## Development
 
@@ -52,9 +55,6 @@ image (located on your PC)
 -----> view the changes in the image in real-time on the monitor
 ```
 **Note**: This implementation is more complex than the first because it requires a board, monitor, and has limited RAM size. You can find this implementation in the "Final Project/VGA_1" folder. Keep in mind that your board has limited memory, so you can only use small-sized images. Adjust the image size according to your board's capacity.
-
-**COE (Coefficient) File**: 
-A COE file is essentially a list of binary or hexadecimal numbers ordered in a specific format. It is commonly used to initialize block RAMs or ROMs in Xilinx FPGA designs. For more information on the syntax and structure of COE files, refer to the Xilinx documentation: [COE File Syntax](https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/cgn_r_coe_file_syntax.htm).
 
 
 To perform basic image processing operations, you need to convert the image into a list of binary numbers, where each binary number represents a pixel value of the image. You can generate this list using the coe_generator.py file. This allows you to execute basic operations such as increasing/decreasing brightness, RGB2Gray conversion, color inversions, and applying various color filters. To perform these operations, you only need access to a single pixel at a time. For instance, converting a color image to black and white can be done by applying the formula (r+g+b)/3 to each pixel. Therefore, you can read a single pixel at a time (one per clock cycle), perform the operation, and either display the result on the screen or store the image on the computer.
