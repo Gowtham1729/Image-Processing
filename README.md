@@ -74,7 +74,7 @@ By using this combined .coe file, your final project will be able to perform bot
 
 Depending on your specific requirements, you can use the provided Python scripts or create your own to generate .coe files for image processing operations. Feel free to modify the existing Python files or write new ones in Python or any other programming language of your choice to suit your needs.
 
-To access the Verilog code for the final project, visit the following GitHub repository: Image-Processing/Final Project/VGA_1/VGA.v
+To access the Verilog code for the final project, visit the following GitHub repository: [Image-Processing/Final Project/VGA_1/VGA.v](https://github.com/Gowtham1729/Image-Processing/blob/master/Final%20Project/VGA_1/VGA_1.srcs/sources_1/new/VGA.v)
 
 By customizing the .coe file generation process and utilizing the provided Verilog code, you can build a comprehensive image processing solution that supports basic operations as well as convolution-based operations.
 
