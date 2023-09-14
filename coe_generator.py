@@ -4,33 +4,38 @@ Created on Thu Oct 25 23:08:57 2018
 
 @author: Gowtham
 """
-
+from typing import Union
+import os
 import cv2
-image = cv2.imread("flower.jpg")
-#cv2.imshow('image',image)
-#cv2.waitKey(0)
-#cv2.destroyAllWindows()
 
-coe = open("imgx.coe", "w")
 
-#gray = cv2.imread('flower.jpg', 0)
-#cv2.imwrite('gray.bmp', gray)
+def convert_to_8bit_binary(number):
+    """Converts a number into its 8-bit binary representation."""
+    binary_representation = bin(number)[2:]  # Convert to binary and remove the "0b" prefix
+    padded_binary = binary_representation.zfill(8)  # Pad with zeros to ensure 8 bits
+    return padded_binary
 
-coe.write("memory_initialization_radix=2;\nmemory_initialization_vector=\n")
 
-flag = 0
-siz = image.size
-for i in image:
-    for j in i:
-        x = ""
-        for k in j:
-            flag += 1
-            #print(flag)
-            bi = bin(k)[2:]
-            for i in range(8-len(bi)):
-                bi = '0' + bi
-            x = x+bi
-        x = ("0"*72)+x
-        coe.write(x +  ',\n')
+def main(image_path: Union[str, bytes, os.PathLike], coe_write_path: Union[str, bytes, os.PathLike]) -> None:
+    image = cv2.imread(image_path)
+    
+    # to display image
+    #cv2.imshow('image',image)
+    #cv2.waitKey(0)
+    #cv2.destroyAllWindows()
 
-coe.close()
+    with open(coe_write_path, "w") as coe:
+        
+        # Write the header information for the .coe file
+        coe.write("memory_initialization_radix=2;\n")
+        coe.write("memory_initialization_vector=\n")
+        
+        for row in image:
+            for pixel in row:
+                binary_pixel = ''.join([convert_to_8bit_binary(channel_value) for channel_value in pixel])
+                padded_binary_pixel = '0' * 72 + binary_pixel
+                coe.write(padded_binary_pixel + ',\n')
+
+
+if __name__ == "__main__":
+    main("flower.jpg", "flower_image.coe")
