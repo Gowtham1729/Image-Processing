@@ -105,7 +105,7 @@ To use this toolbox, you will need:
     *   **Xilinx Vivado:** Ensure Vivado is installed and properly configured for the Basys3 board if you plan to use the FPGA-based implementation.
     *   **Python:** Ensure Python is installed. Install necessary libraries like Pillow for image manipulation:
         ```bash
-        pip install Pillow
+        pip install opencv-python numpy
         ```
 
 ## Usage Instructions
