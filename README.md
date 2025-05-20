@@ -41,7 +41,7 @@ The toolbox offers a range of image processing functions, selectable via the `se
 6.  **Blue Filter (0101)**:
     ![Blue Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/7.Blue_filter.bmp)
 7.  **Green Filter (0110)**:
-    ![Green Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/7.Blue_filter.bmp)
+    ![Green Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/6.Green_filter.bmp)
 8.  **Original Image (0111)**:
     ![Original Image](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/8.Original.bmp)
 9.  **Average Blurring (1000)**:
