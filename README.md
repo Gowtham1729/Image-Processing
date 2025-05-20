@@ -119,10 +119,7 @@ Several Python scripts convert input images into the `.coe` (Coefficient) file f
 
 **General Python Script Usage:**
 Execute scripts from your terminal, providing the input image path. They typically output a `.coe` file.
-*Example (conceptual, refer to script comments for exact usage):*
-```bash
-python coe_generator.py your_image.png output_image.coe
-```
+*Note: The Python scripts (e.g., `coe_generator.py`) currently use hardcoded input and output file paths within the script itself. You will need to modify these paths directly in the Python files to process your specific images and define output locations. Future enhancements could involve adding command-line argument support to these scripts.*
 
 ### PC-based Implementation
 Process images using Verilog simulations on your PC.
