@@ -78,9 +78,13 @@ def create_kernel_coe_file(
     output_coe_str = str(output_coe_path)
 
     # 1. Load main color image
+    main_color_img_str = str(main_color_image_path)
+    if not os.path.exists(main_color_img_str):
+        raise FileNotFoundError(f"Error: Main color image file not found at '{main_color_img_str}'")
+
     main_color_img = cv2.imread(main_color_img_str)
     if main_color_img is None:
-        raise FileNotFoundError(f"Error: Main color image not found or could not be read: '{main_color_img_str}'")
+        raise ValueError(f"Error: Could not read or decode main color image from '{main_color_img_str}'. Check file format, integrity, or permissions.")
     
     num_rows, num_cols = main_color_img.shape[:2]
     print(f"Loaded main color image '{main_color_img_str}' (Shape: {num_rows}x{num_cols})")
