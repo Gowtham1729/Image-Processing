@@ -27,39 +27,24 @@ This Image Processing Toolbox is a project developed for the Basys3 FPGA, primar
 ## Features
 The toolbox offers a range of image processing functions, selectable via the `sel_module` in the Verilog code. Some functions also allow parameter adjustments (e.g., brightness) using the `val` input. The available operations include:
 
-1.  **RGB2Gray (0000)**:
-    ![RGB2Gray](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/1.RGB2Gray.bmp)
-
-2.  **Increase brightness (0001)**:
-    ![Increase Brightness](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/2.I_brightness.bmp)
-3.  **Decrease brightness (0010)**:
-    ![Decrease Brightness](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/3.D_brightness.bmp)
-4.  **Color Inversion (0011)**:
-    ![Color Inversion](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/4.Invert.bmp)
-5.  **Red Filter (0100)**:
-    ![Red Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/5.Red_filter.bmp)
-6.  **Blue Filter (0101)**:
-    ![Blue Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/7.Blue_filter.bmp)
-7.  **Green Filter (0110)**:
-    ![Green Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/6.Green_filter.bmp)
-8.  **Original Image (0111)**:
-    ![Original Image](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/8.Original.bmp)
-9.  **Average Blurring (1000)**:
-    ![Average Blurring](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
-10. **Sobel Edge Detection (1001)**:
-    ![Sobel Edge Detection](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sobel_edge.bmp)
-11. **Edge Detection (1010)**:
-    ![Edge Detection](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/outline.bmp)
-12. **Motion Blurring xy (1011)**:
-    ![Motion Blurring xy](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp)
-13. **Emboss (1100)**:
-    ![Emboss](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/embos.bmp)
-14. **Sharpen (1101)**:
-    ![Sharpen](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sharpen.bmp)
-15. **Motion Blur in x direction (1110)**:
-    ![Motion Blur in x direction](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp)
-16. **Gaussian Blur (1111)**:
-    ![Gaussian Blur](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)
+| Operation                  | sel_module | Image                                                                                                                 |
+|----------------------------|------------|-----------------------------------------------------------------------------------------------------------------------|
+| RGB2Gray                   | 0000       | ![RGB2Gray](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/1.RGB2Gray.bmp)               |
+| Increase brightness        | 0001       | ![Increase Brightness](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/2.I_brightness.bmp) |
+| Decrease brightness        | 0010       | ![Decrease Brightness](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/3.D_brightness.bmp) |
+| Color Inversion            | 0011       | ![Color Inversion](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/4.Invert.bmp)          |
+| Red Filter                 | 0100       | ![Red Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/5.Red_filter.bmp)           |
+| Blue Filter                | 0101       | ![Blue Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/7.Blue_filter.bmp)         |
+| Green Filter               | 0110       | ![Green Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/6.Green_filter.bmp)       |
+| Original Image             | 0111       | ![Original Image](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/8.Original.bmp)         |
+| Average Blurring           | 1000       | ![Average Blurring](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)            |
+| Sobel Edge Detection       | 1001       | ![Sobel Edge Detection](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sobel_edge.bmp)   |
+| Edge Detection             | 1010       | ![Edge Detection](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/outline.bmp)           |
+| Motion Blurring xy         | 1011       | ![Motion Blurring xy](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp)    |
+| Emboss                     | 1100       | ![Emboss](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/embos.bmp)                     |
+| Sharpen                    | 1101       | ![Sharpen](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/sharpen.bmp)                  |
+| Motion Blur in x direction | 1110       | ![Motion Blur in x direction](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/motion_blur.bmp) |
+| Gaussian Blur              | 1111       | ![Gaussian Blur](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/blur.bmp)              |
 
 ## Project Implementations
 This project offers two distinct methods for performing image processing operations:
@@ -211,7 +196,7 @@ A Verilog-implemented VGA controller module displays the processed image on a st
 
 ### COE (Coefficient) File Format
 A `.coe` file is a Xilinx-specific ASCII text file for initializing Block RAMs or ROMs in FPGA designs. It usually includes a header specifying the data's radix (binary or hexadecimal), followed by a vector of data values. In this project, these values represent image pixel data.
-For more details, see the [COE File Syntax](https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/cgn_r_coe_file_syntax.htm) in the Xilinx documentation.
+For more details, see the [COE File Syntax](https://docs.amd.com/r/en-US/ug896-vivado-ip/COE-File-Syntax) in the AMD/Xilinx documentation.
 
 ## Contributing
 Contributions are welcome! If you have improvements or bug fixes, please fork the repository, make your changes, and submit a pull request.
