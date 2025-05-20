@@ -39,7 +39,7 @@ The toolbox offers a range of image processing functions, selectable via the `se
 5.  **Red Filter (0100)**:
     ![Red Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/5.Red_filter.bmp)
 6.  **Blue Filter (0101)**:
-    ![Blue Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/6.Green_filter.bmp)
+    ![Blue Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/7.Blue_filter.bmp)
 7.  **Green Filter (0110)**:
     ![Green Filter](https://github.com/Gowtham1729/Image-Processing-Toolbox/blob/master/images/7.Blue_filter.bmp)
 8.  **Original Image (0111)**:
