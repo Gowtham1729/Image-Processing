@@ -97,7 +97,7 @@ def create_shifted_images(input_image_path: PathLike, output_dir: PathLike) -> N
 
     img = cv2.imread(input_path_str)
     if img is None:
-        raise ValueError(f"Error: Could not read or decode input image from '{input_path_str}'. Check file format, integrity, or permissions.")
+        raise FileNotFoundError(f"Error: Could not read or decode input image from '{input_path_str}'. Check file format, integrity, or permissions.")
 
     os.makedirs(output_dir_str, exist_ok=True)
     print(f"Output directory '{output_dir_str}' ensured.")
@@ -138,6 +138,8 @@ def main_cli():
     """
     Command-line interface for the shifted image generator.
     """
+    import sys
+    
     parser = argparse.ArgumentParser(
         description=(
             "Generates an unshifted 'gray.bmp' and 8 shifted versions of an input image\n"
@@ -172,14 +174,18 @@ def main_cli():
         create_shifted_images(args.input_image_path, args.output_dir)
     except FileNotFoundError as e:
         print(f"File Error: {e}")
+        sys.exit(1)
     except ValueError as e: # For errors like incorrect image dimensions from helper
         print(f"Data Error: {e}")
+        sys.exit(1)
     except IOError as e: # For cv2.imwrite failures
         print(f"File I/O Error: {e}")
+        sys.exit(1)
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         # import traceback
         # print(traceback.format_exc())
+        sys.exit(1)
 
 if __name__ == "__main__":
     main_cli()

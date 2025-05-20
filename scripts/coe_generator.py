@@ -125,6 +125,8 @@ def main_cli():
     Command-line interface for the image to COE converter.
     Parses arguments and calls the image_to_coe function.
     """
+    import sys
+    
     parser = argparse.ArgumentParser(
         description=(
             "Converts an image file to a Xilinx COE (Coefficient) file.\n"
@@ -161,17 +163,18 @@ def main_cli():
     except FileNotFoundError as e:
         print(f"Error: {e}")
         print("Please ensure the input file path is correct and the file exists.")
+        sys.exit(1)
     except IOError as e:
         print(f"File I/O Error: {e}")
         print("Please ensure you have write permissions for the output path and the path is valid.")
+        sys.exit(1)
     except ValueError as e: # Catch errors from pixel processing or channel conversion
         print(f"Data Error: {e}")
         print("Please ensure the input image is a valid BGR image and pixel values are correct.")
+        sys.exit(1)
     except Exception as e: # Catch-all for other unexpected errors from image_to_coe
         print(f"An unexpected error occurred: {e}")
-        # For debugging, one might print traceback:
-        # import traceback
-        # print(traceback.format_exc())
+        sys.exit(1)
 
 if __name__ == "__main__":
     main_cli()

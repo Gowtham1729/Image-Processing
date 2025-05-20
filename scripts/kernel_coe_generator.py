@@ -163,6 +163,8 @@ def main_cli():
     """
     Command-line interface for the kernel-based COE file generator.
     """
+    import sys
+    
     parser = argparse.ArgumentParser(
         description=(
             "Generates a Xilinx COE file for kernel operations. Combines data from a main\n"
@@ -206,14 +208,18 @@ def main_cli():
         # Success message is printed within create_kernel_coe_file
     except FileNotFoundError as e:
         print(f"File Error: {e}")
+        sys.exit(1)
     except ValueError as e:
         print(f"Data or Configuration Error: {e}")
+        sys.exit(1)
     except IOError as e:
         print(f"File I/O Error: {e}")
+        sys.exit(1)
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         # import traceback
         # print(traceback.format_exc())
+        sys.exit(1)
 
 if __name__ == "__main__":
     main_cli()
