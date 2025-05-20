@@ -91,9 +91,13 @@ def create_shifted_images(input_image_path: PathLike, output_dir: PathLike) -> N
     input_path_str = str(input_image_path)
     output_dir_str = str(output_dir)
 
+    input_path_str = str(input_image_path)
+    if not os.path.exists(input_path_str):
+        raise FileNotFoundError(f"Error: Input image file not found at '{input_path_str}'")
+
     img = cv2.imread(input_path_str)
     if img is None:
-        raise FileNotFoundError(f"Error: Input image not found or could not be read: '{input_path_str}'")
+        raise ValueError(f"Error: Could not read or decode input image from '{input_path_str}'. Check file format, integrity, or permissions.")
 
     os.makedirs(output_dir_str, exist_ok=True)
     print(f"Output directory '{output_dir_str}' ensured.")
